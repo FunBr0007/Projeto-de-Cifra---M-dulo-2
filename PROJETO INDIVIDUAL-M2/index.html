@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/cifra.css">
+    <script src='cod.js'></script>
+    <title>CIFRADOR</title>
+</head>
+
+<body>
+    <header>
+         <h1 id="titulo"><span>Codifique seu texto</span></h1>
+    </header>
+
+    <form>
+        <label for = 'entradaMensagem'></label>
+        <input type="text" id="entradaMensagem" placeholder="Escreva aqui"> <br>
+
+        <select id='opçoes'>
+            <option value="Escolha Aqui">Escolha Aqui</option>
+            <option value="cifraDeCesar">Cifra de Cesar</option>
+            <option value="base64">Base 64</option>
+        </select>
+
+        
+                <input type="number" id="incremento" placeholder="SEU NÚMERO" min="1" max="25"><br>
+        
+        <div class='radio'>
+            <input type="radio" id='codificar' name='radio-Cesar' value="radioCodificar"  checked>
+            <label for = 'codificar' id='labelcodificar'> Codificar </label> <br>
+
+            <br>
+
+            <input type="radio" id='decodificar' name='radio-Cesar' value="radioecodificar"  checked>
+            <label for = 'codificar' id='labeldecodificar'> Decodificar </label> <br>
+        </div>
+
+        <div>
+            <p class="saidaMensagem"></p>
+        </div>
+
+        <input type="submit" value="Codifica!" id="submit">
+        <input type="submit" value="Decodifica!" id="submit">
+        
+        
+       
+    </form>
+
+    <footer>©Projeto Individual - Todos os Direitos Reservados </footer>
+
+    
+    <script src='javascript/cifra.js'></script>
+</body>
+</html>
